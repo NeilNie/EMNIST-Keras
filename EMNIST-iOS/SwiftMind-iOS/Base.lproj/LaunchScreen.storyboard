@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="l4E-0i-H7g">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift.png" translatesAutoresizingMaskIntoConstraints="NO" id="MT0-Fd-x65">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MT0-Fd-x65" secondAttribute="height" multiplier="1:1" id="yGR-yE-xmk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift Machine Learning Demo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZf-EK-tyW">
+                                <rect key="frame" x="16" y="319" width="343" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="7h2-KS-8Hp"/>
+                                    <constraint firstAttribute="width" constant="343" id="BeJ-ER-Rsp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Neil Nie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-b9-50e">
+                                <rect key="frame" x="113" y="468" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.29803921568627451" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lb1-b9-50e" firstAttribute="top" secondItem="GZf-EK-tyW" secondAttribute="bottom" constant="48" id="9D4-eW-ngu"/>
+                            <constraint firstItem="Lb1-b9-50e" firstAttribute="centerX" secondItem="GZf-EK-tyW" secondAttribute="centerX" id="aGr-R3-DPP"/>
+                            <constraint firstItem="l4E-0i-H7g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="abJ-ik-Kp4"/>
+                            <constraint firstItem="MT0-Fd-x65" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="and-IS-reh"/>
+                            <constraint firstItem="MT0-Fd-x65" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cJy-fc-6EH"/>
+                            <constraint firstItem="GZf-EK-tyW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hCl-I1-GOV"/>
+                            <constraint firstItem="l4E-0i-H7g" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mcP-J5-6oS"/>
+                            <constraint firstItem="l4E-0i-H7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qFs-Wq-8Pu"/>
+                            <constraint firstItem="GZf-EK-tyW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="299" id="uZX-n6-P8I"/>
+                            <constraint firstItem="MT0-Fd-x65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="viH-Jn-HPk"/>
+                            <constraint firstItem="l4E-0i-H7g" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="xmS-Os-1Ge"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="1200" height="85"/>
+        <image name="swift.png" width="1200" height="1200"/>
+    </resources>
+</document>
